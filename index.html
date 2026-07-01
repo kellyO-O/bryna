@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bree & Me — Memory Reel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ambient floating hearts, purely decorative -->
+  <div class="ambient" aria-hidden="true">
+    <span class="drift d1">♥</span>
+    <span class="drift d2">♥</span>
+    <span class="drift d3">♥</span>
+    <span class="drift d4">♥</span>
+    <span class="drift d5">♥</span>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero">
+    <p class="eyebrow">a running tally of us</p>
+    <h1 class="hero-title">
+      <span class="hero-title-main">Bree</span>
+      <span class="hero-amp">&amp;</span>
+      <span class="hero-title-main">Me</span>
+    </h1>
+    <p class="hero-sub">every scroll below is a frame we've kept</p>
+    <div class="hero-scroll-cue" aria-hidden="true"><span></span></div>
+  </header>
+
+  <!-- ============ DASHBOARD ============ -->
+  <section class="dashboard" id="dashboard" aria-label="Time together">
+    <p class="section-eyebrow">since Feb 25, 2023</p>
+    <div class="stat-row">
+      <div class="stat">
+        <span class="stat-number" id="stat-years">0</span>
+        <span class="stat-label">years</span>
+      </div>
+      <div class="stat-divider">/</div>
+      <div class="stat">
+        <span class="stat-number" id="stat-months">0</span>
+        <span class="stat-label">months</span>
+      </div>
+      <div class="stat-divider">/</div>
+      <div class="stat">
+        <span class="stat-number" id="stat-days">0</span>
+        <span class="stat-label">days</span>
+      </div>
+    </div>
+    <div class="stat-secondary">
+      <span id="stat-live">0</span> seconds and counting
+    </div>
+  </section>
+
+  <!-- ============ MEMORY BELT ============ -->
+  <section class="belt-section" aria-label="Memory reel">
+    <p class="section-eyebrow belt-eyebrow">the reel</p>
+    <div class="belt-wrap">
+      <div class="sprocket-row" aria-hidden="true"></div>
+
+      <div class="belt-track-outer">
+        <!--
+          REPLACE PHOTOS HERE:
+          Swap each .frame-art div's background (see style.css .p1-.p10)
+          for a real photo, e.g.:
+            <div class="frame-art" style="background-image:url('photos/1.jpg')"></div>
+          Keep the .frame-cap caption text or change it to your real memory captions.
+        -->
+        <div class="belt-track" id="belt-track">
+          <!-- set 1 -->
+          <figure class="frame">
+            <div class="frame-art p1"></div>
+        </div>
+        <figcaption class="frame-cap">first hello</figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame-art p2"></div>
+          <figcaption class="frame-cap">that spring</figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame-art p3"></div>
+          <figcaption class="frame-cap">road trip</figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame-art p4"></div>
+          <figcaption class="frame-cap">rainy day in</figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame-art p5"></div>
+          <figcaption class="frame-cap">her laugh</figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame-art p6"></div>
+          <figcaption class="frame-cap">summer light</figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame-art p7"></div>
+          <figcaption class="frame-cap">late night talk</figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame-art p8"></div>
+          <figcaption class="frame-cap">the anniversary</figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame-art p9"></div>
+          <figcaption class="frame-cap">just us</figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame-art p10"></div>
+          <figcaption class="frame-cap">still here</figcaption>
+        </figure>
+        <!-- set 2 (duplicate for seamless loop) -->
+        <figure class="frame">
+          <div class="frame-art p1"></div>
+          <figcaption class="frame-cap">first hello</figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame-art p2"></div>
+          <figcaption class="frame-cap">that spring</figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame-art p3"></div>
+          <figcaption class="frame-cap">road trip</figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame-art p4"></div>
+          <figcaption class="frame-cap">rainy day in</figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame-art p5"></div>
+          <figcaption class="frame-cap">her laugh</figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame-art p6"></div>
+          <figcaption class="frame-cap">summer light</figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame-art p7"></div>
+          <figcaption class="frame-cap">late night talk</figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame-art p8"></div>
+          <figcaption class="frame-cap">the anniversary</figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame-art p9"></div>
+          <figcaption class="frame-cap">just us</figcaption>
+        </figure>
+        <figure class="frame">
+          <div class="frame-art p10"></div>
+          <figcaption class="frame-cap">still here</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="sprocket-row" aria-hidden="true"></div>
+    <p class="belt-hint">hover to pause a frame</p>
+    </div>
+  </section>
+
+  <!-- ============ FAVORITES ============ -->
+  <section class="favorites" aria-label="Favorite photos">
+    <p class="section-eyebrow">the favorites</p>
+    <h2 class="fav-title">pinned to the board</h2>
+
+    <!--
+      REPLACE PHOTOS HERE:
+      Same pattern — swap .polaroid-art background for a real photo.
+      data-tag controls the tape label text/color: "cutest" or "hottest".
+    -->
+    <div class="board">
+      <figure class="polaroid tilt-a" data-tag="cutest">
+        <span class="tape">cutest</span>
+        <div class="polaroid-art fav1"></div>
+        <figcaption>that morning smile</figcaption>
+      </figure>
+
+      <figure class="polaroid tilt-b" data-tag="hottest">
+        <span class="tape tape-rose">hottest</span>
+        <div class="polaroid-art fav2"></div>
+        <figcaption>red dress night</figcaption>
+      </figure>
+
+      <figure class="polaroid tilt-c" data-tag="beautiful">
+        <span class="tape">beautiful</span>
+        <div class="polaroid-art fav3"></div>
+        <figcaption>sleepy sunday</figcaption>
+      </figure>
+
+      <figure class="polaroid tilt-d" data-tag="funny">
+        <span class="tape tape-rose">funny</span>
+        <div class="polaroid-art fav4"></div>
+        <figcaption>golden hour</figcaption>
+      </figure>
+      <figure class="polaroid tilt-e" data-tag="fav">
+        <span class="tape tape-rose">fav</span>
+        <div class="polaroid-art fav4"></div>
+        <figcaption>golden hour</figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>here's to the next roll of film, Bree.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
