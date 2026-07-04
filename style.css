@@ -448,6 +448,26 @@ body::before {
   background-size: cover;
 }
 
+.p11 {
+  background-image: url('pic/us12.jpg');
+  background-size: cover;
+}
+
+.p12 {
+  background-image: url('pic/us13.jpg');
+  background-size: cover;
+}
+
+.p13 {
+  background-image: url('pic/us14.jpg');
+  background-size: cover;
+}
+
+.p14 {
+  background-image: url('pic/us15.jpg');
+  background-size: cover;
+}
+
 /* ============================================
    FAVORITES / POLAROID BOARD
    ============================================ */
