@@ -7,7 +7,7 @@
   const PASSWORD = "bear";
   const PLAY_FROM = new Date("2026-11-17T00:00:00"); // the sequence plays on this day only (device local time)
   const PLAY_TO = new Date("2026-11-18T00:00:00");
-  const END = new Date("2025-11-17T16:13:00");       // where the counter rewinds to and stays stuck
+  const END = new Date("2026-08-17T16:13:00");       // where the counter rewinds to and stays stuck
   const UNLOCK_KEY = "bryna_unlocked";
   const Q = new URLSearchParams(location.search);
   const DEMO = Q.has("demo");   // ?demo  = play the sequence now (preview)
