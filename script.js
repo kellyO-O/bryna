@@ -30,7 +30,10 @@ function countUp(el, target, duration = 1100) {
 }
 
 function initDashboard() {
-  const now = new Date();
+  const F = window.Finale;
+  if (F && F.mode === "sequence") return; // finale drives the numbers
+  const frozen = F && F.mode === "final";
+  const now = frozen ? F.END : new Date();
   const { years, months, days } = getBreakdown(now);
 
   const yEl = document.getElementById("stat-years");
@@ -47,8 +50,12 @@ function initDashboard() {
     const diffSeconds = Math.floor((new Date() - START_DATE) / 1000);
     liveEl.textContent = diffSeconds.toLocaleString();
   }
+  if (frozen) {
+    liveEl.textContent = Math.floor((F.END - START_DATE) / 1000).toLocaleString();
+    return;
+  }
   tickLive();
-  setInterval(tickLive, 1000);
+  window.liveTimer = setInterval(tickLive, 1000);
 }
 
 // Trigger the count-up once the dashboard scrolls into view

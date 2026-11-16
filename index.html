@@ -11,9 +11,24 @@
     href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="finale.css">
+  <script>try{if(sessionStorage.getItem("bryna_unlocked")==="1")document.documentElement.classList.add("unlocked")}catch(e){}</script>
 </head>
 
 <body>
+
+  <!-- ============ PASSWORD GATE ============ -->
+  <div id="gate" role="dialog" aria-label="Password">
+    <div class="sprocket-row sprocket-top" aria-hidden="true"></div>
+    <p class="gate-eyebrow">a private reel</p>
+    <h2 class="gate-title">Bree &amp; Me</h2>
+    <form class="gate-form" id="gate-form" autocomplete="off">
+      <input class="gate-input" id="gate-input" type="password" placeholder="password" aria-label="Password" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false">
+      <button class="gate-btn" type="submit">Open</button>
+    </form>
+    <p class="gate-err" id="gate-err">not quite</p>
+    <div class="sprocket-row sprocket-bot" aria-hidden="true"></div>
+  </div>
 
   <!-- ambient floating hearts, purely decorative -->
   <div class="ambient" aria-hidden="true">
@@ -37,7 +52,7 @@
 
   <!-- ============ DASHBOARD ============ -->
   <section class="dashboard" id="dashboard" aria-label="Time together">
-    <p class="section-eyebrow">since Feb 25, 2023</p>
+    <p class="section-eyebrow" id="dash-eyebrow">since Feb 25, 2023</p>
     <div class="stat-row">
       <div class="stat">
         <span class="stat-number" id="stat-years">0</span>
@@ -55,7 +70,7 @@
       </div>
     </div>
     <div class="stat-secondary">
-      <span id="stat-live">0</span> seconds and counting
+      <span id="stat-live">0</span><span id="stat-tail"> seconds and counting</span>
     </div>
   </section>
 
@@ -228,10 +243,11 @@
   </section>
 
   <footer class="footer">
-    <p>here's to the next roll of film, Bree.</p>
+    <p id="footer-line">here's to the next roll of film, Bree.</p>
   </footer>
 
   <script src="script.js"></script>
+  <script src="finale.js"></script>
 </body>
 
 </html>
